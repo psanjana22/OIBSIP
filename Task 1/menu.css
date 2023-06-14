@@ -1,0 +1,105 @@
+*
+{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: auto;
+	font-family: Arial;
+	background-image: url(https://www.amtmindia.org/wp-content/uploads/2022/07/Blog-5-Reasons-You-Should-Adopt-From-An-Animal-Shelter_Web-2048x1072.jpg);
+	background-attachment: fixed;
+	color:white;
+	font-family: 'fira sans',sans-serif;
+}
+ .topnav {
+	overflow:hidden;
+	background-color:black;
+}
+.topnav a{
+	float:right;
+	display: block;
+    color:white ;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 15px;
+}
+.topnav a:hover{
+	background-color:skyblue;
+	color:black;
+}
+.topnav a.active{
+	background-color:#04AA6D;
+	color:white;
+}
+img
+{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s;
+    backface-visibility: hidden;
+    border-radius: 25%;
+
+}
+
+button {
+	width: 100px;
+	height: 50px;
+	background:paleturquoise;
+	transition-property: width;
+	transition-duration: 5s;
+	transition-delay: 1s;
+	transform: translate(-0.19%, -400%);
+	border: 2px solid#4CAF50;
+	border-radius: 25%;
+}
+button:hover
+{
+   width: 200px;
+   background-color: rgba(20,80,207,0.75);
+   background:whitesmoke;
+}
+.fa
+{
+ 	
+	font-size: 15px;
+	width:50px ;
+	text-align: center;
+	text-decoration: none;
+
+}
+.fa:hover{
+	opacity: 0.7;
+}
+.fa-facebook
+{
+	background:white;
+	color: black;
+	transform: translate(1310%,-300%);
+	border-radius: 15%;
+}
+.fa-instagram
+{
+	background: white;
+	color: black;
+	transform: translate(1311%,-300%);
+    border-radius: 15%;
+}
+.fa-twitter
+{
+	background: white;
+	color: black;
+	transform: translate(1312%,-300%);
+	border-radius: 15%;
+}
+.parallax
+{
+	background-image: url("https://www.humanesociety.org/sites/default/files/styles/768x326/public/2022-07/shelter-dog-575049.jpg?h=3a67b52a&itok=Viq8U5DY");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
