@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>TEMPERATURE CONVERTER</h1>
+<div class="image">
+<img src="https://stjude.scene7.com/is/image/stjude/Together-Fever?fmt=png-alpha&wid=600">
+</div> 
+<input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value=""/>
+<input type="text" id="celsius" placeholder="Celsius" name="c" value=""/>
+<button id="convert">CONVERT</button>
+<button id="clear">RESET</button>
+<style>
+
+  h1
+  {
+    text-align: center;
+    font-family: serif;
+    text-shadow: revert;
+    background: beige;
+  }
+  body
+  {
+   
+    text-align: center;
+  }
+  .input
+  {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #f44a55a;
+    font-family: cursive,sans-serif;
+  }
+  ::-webkit-input-placeholder
+  {
+    color: #ccc;
+  }
+  :-moz-placeholder
+  {
+    color: #ccc;
+  }
+  ::-moz-placeholder
+  {
+    color: #ccc;
+  }
+  :-ms-input-placeholder
+  {
+    color: #ccc;
+  }
+  .image
+  {
+    filter: blur(1px);
+  }
+
+  .box
+  {
+    background-color:salmon;
+    width: 25%;
+    height:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button
+  {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #545454;
+  }
+  #convert
+  {
+    background-color:white;
+  }
+  #convert:hover
+  {
+    background-color:white;
+  }
+
+</style>
+<script >
+  document.getElementById('convert').onclick=tempConvert;
+  document.getElementById('clear').onclick=clearForm;
+function tempConvert()
+{
+    var fahrenheit= document.getElementById("fahrenheit").value;
+    var celsius= document.getElementById("celsius").value;
+
+  
+  if(fahrenheit!='')
+  {
+    celsius=(parseFloat(fahrenheit)-32)/1.8;
+
+  }
+  else
+  {
+    fahrenheit=(parseFloat(celsius)*1.8)+32;
+  }
+    document.getElementById('fahrenheit').value=parseFloat(fahrenheit).toFixed(1);
+    document.getElementById('celsius').value=parseFloat(celsius).toFixed(1);
+}
+function clearForm()
+{
+  document.getElementById('fahrenheit').value='';
+  document.getElementById('celsius').value='';
+}
+</script>
+
+</body>
+</html>
